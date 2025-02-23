@@ -88,8 +88,12 @@ const TravelAdvisory: React.FC<TravelAdvisoryProps> = ({ weatherDetails }) => {
         setAdvisory(response?.data?.choices[0]?.message?.content)
         // Output the content of the response
         // console.log(response.data)
-      } catch (error: any) {
-        console.log(error?.message)
+      } catch (error: unknown) {
+        if (error instanceof Error) {
+          console.log(error.message);
+        } else {
+          console.log("An unknown error occurred.");
+        }
       }
 
     };

@@ -1,9 +1,7 @@
 "use client"
 
-import Image from "next/image"
 import { useEffect, useState } from "react"
 import NavLink from "./NavLink"
-import Link from "next/link"
 // import logo from "/public/logo.png"
 // import { useUser } from "@clerk/nextjs"
 import { usePathname } from "next/navigation"
@@ -17,6 +15,7 @@ const Navbar = () => {
   const pathname = usePathname()
 
   useEffect(() => {
+    console.log(isMounted)
     setIsMounted(true)
   }, [])
 
