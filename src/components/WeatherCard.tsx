@@ -1,6 +1,6 @@
 "use client"
 
-import { Suspense, useState } from "react"
+import { useState } from "react"
 import { Cloud, Droplets, Wind } from "lucide-react"
 import SearchBar from "./SearchBar"
 import { motion } from 'framer-motion'

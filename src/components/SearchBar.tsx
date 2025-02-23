@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { Search } from "lucide-react";
 import { motion } from "framer-motion";
-import { useParams, usePathname, useRouter, useSearchParams } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import LoaderComponent from "./LoaderComponent";
 
 const SearchBar = () => {

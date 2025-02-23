@@ -13,13 +13,3 @@ const completion = openai.chat.completions.create({
 });
 
 completion.then((result) => console.log(result.choices[0].message));
-
-
-const handleMessageTest = async (formData: FormData) => {
-
-  try {
-
-  } catch (error) {
-    console.log(error)
-  }
-}
